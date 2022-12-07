@@ -1,0 +1,53 @@
+﻿生成启动时间为 2022/12/6 14:51:34。
+     1>项目“D:\code\VS2017_code\linuxcode\socket_practice\client\client.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“D:\code\VS2017_code\linuxcode\socket_practice\client\obj\x64\Debug\client.tlog\client.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“D:\code\VS2017_code\linuxcode\socket_practice\client\obj\x64\Debug\client.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       _ValidateSources:
+         Validating sources
+       _CopySources:
+         Copying sources remotely to '192.168.79.129'
+         Copying file 'D:\code\VS2017_code\linuxcode\socket_practice\client\main.c' to '/root/projects/client/main.c'
+       _ValidateValidArchitecture:
+         Validating architecture
+         Current project architecture 'x64' is compatible with the remote system architecture 'x64' ('x64').
+       ClCompile:
+         Starting remote build
+         Compiling sources:
+         Invoking 'g++'
+         g++ -c -x c /root/projects/client/main.c -g2 -gdwarf-2 -o "/root/projects/client/obj/x64/Debug/main.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-pointer-sign" -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fexceptions -std=c11
+         main.c
+     1>D:\code\VS2017_code\linuxcode\socket_practice\client\main.c(51,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\code\VS2017_code\linuxcode\socket_practice\client\main.c(51,13): warning :    51 |   int len = recv(cfd, buf, sizeof(buf), 0);
+D:\code\VS2017_code\linuxcode\socket_practice\client\main.c(51,13): warning :       |             ^~~~
+         Done compiling '/root/projects/client/main.c'
+         /root/projects/client/main.c: In function ‘main’:
+         /root/projects/client/main.c:51:13: warning: conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+            51 |   int len = recv(cfd, buf, sizeof(buf), 0);
+               |             ^~~~
+         
+       Link:
+         Linking objects
+         Invoking 'ld'
+         g++ -o "/root/projects/client/bin/x64/Debug/client.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /root/projects/client/obj/x64/Debug/main.o
+         Done linking, output file name: '/root/projects/client/bin/x64/Debug/client.out'
+         Copying file '/root/projects/client/bin/x64/Debug/client.out' to 'D:\code\VS2017_code\linuxcode\socket_practice\client\bin\x64\Debug\client.out'
+         client.vcxproj -> D:\code\VS2017_code\linuxcode\socket_practice\client\bin\x64\Debug\client.out
+       FinalizeBuildStatus:
+         正在删除文件“D:\code\VS2017_code\linuxcode\socket_practice\client\obj\x64\Debug\client.tlog\unsuccessfulbuild”。
+         正在对“D:\code\VS2017_code\linuxcode\socket_practice\client\obj\x64\Debug\client.tlog\client.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\code\VS2017_code\linuxcode\socket_practice\client\client.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+       “D:\code\VS2017_code\linuxcode\socket_practice\client\client.vcxproj”(Rebuild 目标) (1) ->
+       (ClCompile 目标) -> 
+         D:\code\VS2017_code\linuxcode\socket_practice\client\main.c(51,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+       D:\code\VS2017_code\linuxcode\socket_practice\client\main.c(51,13): warning :    51 |   int len = recv(cfd, buf, sizeof(buf), 0);
+       D:\code\VS2017_code\linuxcode\socket_practice\client\main.c(51,13): warning :       |             ^~~~
+
+    1 个警告
+    0 个错误
+
+已用时间 00:00:01.93

@@ -1,0 +1,62 @@
+﻿生成启动时间为 2022/12/6 14:52:22。
+     1>项目“D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\socket_practice.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\obj\x64\Debug\server.tlog\server.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\obj\x64\Debug\server.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       _ValidateSources:
+         Validating sources
+       _CopySources:
+         Copying sources remotely to '192.168.79.129'
+         Copying file 'D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c' to '/root/projects/server/main.c'
+       _ValidateValidArchitecture:
+         Validating architecture
+         Current project architecture 'x64' is compatible with the remote system architecture 'x64' ('x64').
+       ClCompile:
+         Starting remote build
+         Compiling sources:
+         Invoking 'g++'
+         g++ -c -x c /root/projects/server/main.c -g2 -gdwarf-2 -o "/root/projects/server/obj/x64/Debug/main.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-pointer-sign" -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fexceptions -std=c11
+         main.c
+     1>D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(54,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(54,13): warning :    54 |   int len = recv(fd, buf, sizeof(buf), 0);
+D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(54,13): warning :       |             ^~~~
+     1>D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(58,18): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(58,18): warning :    58 |    send(fd, buf, len, 0);
+D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(58,18): warning :       |                  ^~~
+         Done compiling '/root/projects/server/main.c'
+         /root/projects/server/main.c: In function ‘main’:
+         /root/projects/server/main.c:54:13: warning: conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+            54 |   int len = recv(fd, buf, sizeof(buf), 0);
+               |             ^~~~
+         /root/projects/server/main.c:58:18: warning: conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+            58 |    send(fd, buf, len, 0);
+               |                  ^~~
+         
+       Link:
+         Linking objects
+         Invoking 'ld'
+         g++ -o "/root/projects/server/bin/x64/Debug/server.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /root/projects/server/obj/x64/Debug/main.o
+         Done linking, output file name: '/root/projects/server/bin/x64/Debug/server.out'
+         Copying file '/root/projects/server/bin/x64/Debug/server.out' to 'D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\bin\x64\Debug\server.out'
+         socket_practice.vcxproj -> D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\bin\x64\Debug\server.out
+       FinalizeBuildStatus:
+         正在删除文件“D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\obj\x64\Debug\server.tlog\unsuccessfulbuild”。
+         正在对“D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\obj\x64\Debug\server.tlog\server.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\socket_practice.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+       “D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\socket_practice.vcxproj”(Rebuild 目标) (1) ->
+       (ClCompile 目标) -> 
+         D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(54,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+       D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(54,13): warning :    54 |   int len = recv(fd, buf, sizeof(buf), 0);
+       D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(54,13): warning :       |             ^~~~
+         D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(58,18): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+       D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(58,18): warning :    58 |    send(fd, buf, len, 0);
+       D:\code\VS2017_code\linuxcode\socket_practice\socket_practice\main.c(58,18): warning :       |                  ^~~
+
+    2 个警告
+    0 个错误
+
+已用时间 00:00:01.95
